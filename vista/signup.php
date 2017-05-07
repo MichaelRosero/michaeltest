@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
   <head>
-    <title>Bootstrap Admin Theme v3</title>
+    <title>Registro de usuarios</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- styles -->
     <link href="../css/styles.css" rel="stylesheet">
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
-           <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
-           <script src="../controlador/app.js"></script>
-                <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">  
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
+    <script src="../controlador/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -48,6 +49,7 @@
       
       </style>
   </head>
+
   <body class="login-bg">
   	<div class="header">
 	     <div class="container">
@@ -114,7 +116,12 @@
                     
                     <input type="tel" name="celular" ng-model="celular" class="form-control"  placeholder="Celular" required/>  
                     <br /> 
-                    
+
+                    <md-content ng-controller="AppCtrl as ctrl" layout-padding ng-cloak>
+                          <h4>Standard date-picker</h4>
+                          <md-datepicker ng-model="ctrl.myDate" md-placeholder="Enter date"></md-datepicker>
+                    </md-content>
+
                     <input type="submit" name="btnInsert" class="btn btn-info" ng-click="insertData()" value="Registrarme"/>
 
                 </div>  
@@ -125,32 +132,32 @@
 	
 	
 	<script type="text/javascript">
-  $(function() {
-    $('#datetimepicker1').datetimepicker({
-      language: 'pt-BR'
-    });
-  });
-</script>
+    angular.module('datepickerBasicUsage', ['ngMaterial', 'ngMessages']).controller('AppCtrl', 
+      function() {
+        this.myDate = new Date();
+        this.isOpen = false;
+      });
+  </script>
 	
-<script>
-function valida(e){
-    tecla = (document.all) ? e.keyCode : e.which;
+  <script>
+  function valida(e){
+      tecla = (document.all) ? e.keyCode : e.which;
 
-    if (tecla==8){
-        return true;
-    }
-        
+      if (tecla==8){
+          return true;
+      }
+          
 
-    patron =/[0-9]/;
-    tecla_final = String.fromCharCode(tecla);
-    return patron.test(tecla_final);
-}
-</script>
+      patron =/[0-9]/;
+      tecla_final = String.fromCharCode(tecla);
+      return patron.test(tecla_final);
+  }
+  </script>
 
  
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script src="../js/custom.js"></script>
 
-        </body>
+  </body>
 </html>

@@ -1,6 +1,9 @@
  <?php  
- //insert.php  
-$connect = mysqli_connect("localhost", "root", "root", "ideasplus");  
+ //insert.php 
+ include('Connector.php');
+ $conexion = new Connector(); 
+$connect = $conexion->conexion(); //mysqli_connect("localhost", "root", "", "ideasplus"); 
+
  $data = json_decode(file_get_contents("php://input"));  
  if(count($data) > 0)  
  {  
