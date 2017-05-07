@@ -67,51 +67,55 @@
                 <span>Regístrate en IDEAS+</span><br>
                 <div ng-app="myapp" ng-controller="usercontroller">  
                      
-                     <input type="text" name="nombre" ng-model="nombre" class="form-control" placeholder="Nombre" required />  
-                     <br />  
+                    <input type="text" name="nombre" ng-model="nombre" class="form-control" placeholder="Nombre" required />  
+                    <br />  
                     
-                     <input type="text" name="apellido" ng-model="apellido" class="form-control"  placeholder="Apellido"  required/>  
-                     <br />  
+                    <input type="text" name="apellido" ng-model="apellido" class="form-control"  placeholder="Apellido"  required/>  
+                    <br />  
               
-                     <input type="tel" name="documento" ng-model="documento" class="form-control"  placeholder="Documento" required/>  
-                     <br /> 
-                     <select class="form-control"  name="tipodocumento" ng-model="tipodocumento">
-  <option value="" selected="selected">Tipo de documento</option>
-  <option value="Cedula">Cédula</option>
-  <option value="T.I">T.I</option>
-  <option value="Pasaporte">Pasaporte</option>
- <option value="Otro">Otro</option>
+                    <input type="tel" name="documento" ng-model="documento" class="form-control"  placeholder="Documento" required/>  
+                    <br /> 
+                    
+                    <select class="form-control"  name="tipodocumento" ng-model="tipodocumento">
+                      <option value="" selected="selected">Tipo de documento</option>
+                      <option value="Cedula">Cédula</option>
+                      <option value="T.I">T.I</option>
+                      <option value="Pasaporte">Pasaporte</option>
+                     <option value="Otro">Otro</option>
+                    </select>
+                    <br /> 
 
-</select>
-    <br /> 
-                     <input type="email" name="email" ng-model="email" class="form-control" placeholder="Email"  required/>  
+                    <input type="email" name="email" ng-model="email" class="form-control" placeholder="Email"  required/>  
                      <br /> 
                   
-    <select class="form-control" name="tipouser" ng-model="tipouser">
-  <option value="" selected="selected">¿Qué eres?</option>
-  <option value="2">Estudiante</option>
-  <option value="3">Profesor</option>
-  <option value="1">Administrador</option>
+                    <select class="form-control" name="tipouser" ng-model="tipouser">
+                    <option value="" selected="selected">¿Qué eres?</option>
+                    <option value="2">Estudiante</option>
+                    <option value="3">Profesor</option>
+                    </select>
+                    <br /> 
 
-</select>
-    <br /> 
-                      
-                    
-                    
-                     <input type="text" name="genero" ng-model="genero" class="form-control" placeholder="Genero"  required/>  
-                     <br /> 
-           
-                     <input type="date" name="fechanacimiento" ng-model="fechanacimiento" class="form-control" placeholder="Fecha de nacimiento"  required/>  
-                     <br /> 
+                    <select class="form-control"  name="tipodocumento" ng-model="genero">
+                      <option value="" selected="selected">Genero</option>
+                      <option value="M">Masculino</option>
+                      <option value="F">Femenino</option>
+                    </select>
+                    <br /> 
+
+                    <input type="date" name="fechanacimiento" ng-model="fechanacimiento" class="form-control" placeholder="Fecha de nacimiento"  required/>  
+                    <br /> 
                      
-                     <input type="password" name="contrasena" ng-model="contrasena" class="form-control"  placeholder="Contrasena" required/>  
-                     <br /> 
+                    <input type="password" name="contrasena" ng-model="contrasena" class="form-control"  placeholder="Contrasena" required/>  
+                    <br /> 
                     
-                     <input type="tel" name="telefono" ng-model="telefono" class="form-control"  placeholder="Telefono" required/>  
-                     <br /> 
-                         <input type="tel" name="celular" ng-model="celular" class="form-control"  placeholder="Celular" required/>  
-                     <br /> 
-                     <input type="submit" name="btnInsert" class="btn btn-info" ng-click="insertData()" value="Registrarme"/>  
+                    <input type="tel" name="telefono" ng-model="telefono" class="form-control"  placeholder="Telefono" required/>  
+                    <br /> 
+                    
+                    <input type="tel" name="celular" ng-model="celular" class="form-control"  placeholder="Celular" required/>  
+                    <br /> 
+                    
+                    <input type="submit" name="btnInsert" class="btn btn-info" ng-click="insertData()" value="Registrarme"/>
+
                 </div>  
            </div>
 		</div>
