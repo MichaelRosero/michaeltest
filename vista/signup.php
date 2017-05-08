@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
   <head>
     <title>Registro de usuarios</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -117,11 +117,6 @@
                     <input type="tel" name="celular" ng-model="celular" class="form-control"  placeholder="Celular" required/>  
                     <br /> 
 
-                    <md-content ng-controller="AppCtrl as ctrl" layout-padding ng-cloak>
-                          <h4>Standard date-picker</h4>
-                          <md-datepicker ng-model="ctrl.myDate" md-placeholder="Enter date"></md-datepicker>
-                    </md-content>
-
                     <input type="submit" name="btnInsert" class="btn btn-info" ng-click="insertData()" value="Registrarme"/>
 
                 </div>  
@@ -129,15 +124,6 @@
 		</div>
 	</div>
 	
-	
-	
-	<script type="text/javascript">
-    angular.module('datepickerBasicUsage', ['ngMaterial', 'ngMessages']).controller('AppCtrl', 
-      function() {
-        this.myDate = new Date();
-        this.isOpen = false;
-      });
-  </script>
 	
   <script>
   function valida(e){
