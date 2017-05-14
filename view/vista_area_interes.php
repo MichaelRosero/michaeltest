@@ -5,16 +5,19 @@
           
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
            <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
-           <script src="../controller/controlador_rol.js"></script>
+           <script src="../controller/controlador_area_interes.js"></script>
       </head>  
       <body>  
            <br /><br />  
            <div class="container" style="width:500px;">  
-           <h2 algin="center"> Gestion de Roles </h2>
-                
+                <h2 algin="center"> Gesti&oacute;n de &Aacute;reas de Inter&eacute;s </h2>
                 <div ng-app="myapp" ng-controller="usercontroller" ng-init="displayData()">  
-                     <label>Nombre Rol</label>  
-                     <input type="text" name="nombreRol" ng-model="nombreRol" class="form-control" />  
+                     <label>Nombre de &Aacute;rea</label>  
+                     <input type="text" name="nombreArea" ng-model="nombreArea" class="form-control" />  
+                     <br />  
+
+                      <label>Descripci&oacute;n del &Aacute;rea</label>  
+                     <textarea name="descripcionArea" ng-model="descripcionArea" class="form-control" rows="5" cols="50">  </textarea>  
                      <br />  
                     
                      <input type="hidden" ng-model="id" />  
@@ -22,17 +25,18 @@
                      <br /><br />  
                      <table class="table table-bordered">  
                           <tr>  
-                               <th>Nombre rol</th>  
-                          
+                               <th>Nombre &Aacute;rea</th>  
+                               <th>Descripci&oacute;n</th>  
                                <th>Actualizar</th>  
                                
                                 <th>Eliminar</th>
                           </tr>  
                           <tr ng-repeat="x in names">  
                                <td>{{x.NOMBRE}}</td>  
+                               <td>{{x.DESCRIPCION}}</td>  
                             
-                               <td><button ng-click="updateData(x.ID_ROL, x.NOMBRE)" class="btn btn-info btn-xs">Actualizar</button></td>
-                                <td><button ng-click="deleteData(x.ID_ROL)" class="btn btn-info btn-xs">Eliminar</button></td>  
+                               <td><button ng-click="updateData(x.ID_AREAINTERES, x.NOMBRE, x.DESCRIPCION)" class="btn btn-info btn-xs">Actualizar</button></td>
+                                <td><button ng-click="deleteData(x.ID_AREAINTERES)" class="btn btn-info btn-xs">Eliminar</button></td>  
                           </tr>  
                      </table>  
                 </div>  
