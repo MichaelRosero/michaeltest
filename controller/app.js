@@ -24,7 +24,7 @@ function controllerForm($scope, $http) {
        
     $http.post('../model/index.php',{ usuario : $scope.txtUsuario , contrasena : $scope.txtContrasena })
         .success(function(data) {
-
+       
            // si no existe el usuario nos muestre un alerta de error
            if (typeof(data)=='string'){
              $scope.alertaLoginError = false;   
@@ -32,7 +32,7 @@ function controllerForm($scope, $http) {
              $scope.txtUsuario    = '';
              $scope.txtContrasena = '';   
            }else{
-               window.location.href = "./index.html";
+               window.location.href = "./Roles.php";
              // si existe ya la hicimos y que nos ponga un mensaje de bienvenida
              $scope.rsJSON = data.usuario;
              $scope.alertaLoginCorrecto = false;            
@@ -45,19 +45,3 @@ function controllerForm($scope, $http) {
         
   }
 
- 
-// Registro de usuario, de insert.php
-  
- var app = angular.module("myapp",[]);  
- app.controller("usercontroller", function($scope, $http){  
-      $scope.insertData = function(){  
-           $http.post(  
-                "../modelo/insert.php",  
-                {'nombre':$scope.nombre, 'apellido':$scope.apellido, 'documento':$scope.documento, 'tipodocumento':$scope.tipodocumento, 'email':$scope.email, 'tipouser':$scope.tipouser,  'genero':$scope.genero, 'fechanacimiento':$scope.fechanacimiento, 'contrasena':$scope.contrasena, 'telefono':$scope.telefono, 'celular':$scope.celular}  
-           ).success(function(data){  
-                alert(data);  
-                $scope.nombre = null;  
-                $scope.apellido = null;  
-           });  
-      }  
- });  

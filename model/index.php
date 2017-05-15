@@ -1,7 +1,7 @@
 
 <?php
 
-include('conexion.php');
+require 'connector.php';
 
 $JSON       = file_get_contents("php://input");
 $request    = json_decode($JSON);
@@ -21,8 +21,10 @@ function consultarLogin($usuario,$contrasena){
         $db = null;
         echo  json_encode($usuario);
     } catch(PDOException $e) {
-        echo 'Usuario no existe';
+        echo '{"error":{"text":'. $e->getMessage() .'}}'; 
     }
 }
+/*
+,$documento,$tipodocumento,$correo$,$tipouser,$estado,$genero,$fechanacimiento,$contrasena,$telefono, $celular*/
 
 ?>

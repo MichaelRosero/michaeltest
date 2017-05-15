@@ -51,16 +51,13 @@
 
         </style>
         <div class="ideasplusTitle">
-            <span>IDEAS</span><span>+</span>
-            <p>By BrianiacDevelopers</p>
+            <a href="./login.html">  <span>IDEAS</span><span>+</span> </a>
+            <p>Por BrianiacDevelopers</p>
         </div>
         
         
     <div class="container loginInterno" ng-controller="controllerForm">
      <br>
-        //
-      
-        //
         
          <div class="row">
             <div class="col-md-4 col-md-offset-4">
@@ -74,8 +71,8 @@
                           </div>
                           <div class="form-group">
                               <input class="form-control" ng-model="txtContrasena" placeholder="Contraseña" name="password" type="password" value=""required>
-                          </div>                            
-                    
+                          </div>
+                       
                           <div class="row">
                            <div class="col-md-6">
                             <input class="btn btn-lg btn-info btn-block" type="submit" value="Entrar">
@@ -95,10 +92,19 @@
             </div>
           </div> 
 
+        <div class="alert alert-warning alert-dismissible fade in centerAlert" role="alert" ng-hide="alertaLoginError">
+          <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <strong>Lo siento!</strong> Tu Usuario o Contraseña estan incorrectos.
+        </div>
+
+        <div class="alert alert-success alert-dismissible fade in" role="alert" ng-hide="alertaLoginCorrecto">
+          <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
       
+          <strong>Bienvenido!</strong> {{rsJSON | json}}.
+        </div>
     </div>
     
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-  <script src="../controlador/app.js"></script>
+  <script src="../controller/app.js"></script>
     </body>
 </html>
