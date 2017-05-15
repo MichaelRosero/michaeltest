@@ -1,44 +1,104 @@
-<!DOCTYPE html>  
- <!-- index.php !-->  
- <html>  
-      <head>  
-          
-           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
-           <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
-           <script src="../controller/controlador_rol.js"></script>
-      </head>  
-      <body>  
-           <br /><br />  
-           <div class="container" style="width:500px;">  
-           <h2 algin="center"> Gestion de Roles </h2>
-                
-                <div ng-app="myapp" ng-controller="usercontroller" ng-init="displayData()">  
-                     <label>Nombre Rol</label>  
-                     <input type="text" name="nombreRol" ng-model="nombreRol" class="form-control" />  
-                     <br />  
+
+<!DOCTYPE html>
+<html ng-app="login" lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <link rel="stylesheet" href="../css/estilos.css">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+    <style>
+
+        body{
+            width: 100%;
+            height: 870px;
+            background:url(../recursos/ideas.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+      
+        .row{
+            margin: 20px 0px 20px 0px;
+        }
+        .ideasplusTitle{
+            width: 100%;
+            text-align: center;
+          margin-top:150px;
+        }
+        .ideasplusTitle span:nth-child(1){
+            color: #3352FF;
+        }   .ideasplusTitle span:nth-child(2){
+            color: white;
+        }
+           .ideasplusTitle span{
+            font-size: 110px;
+            font-family: 'Open Sans';
+               width: 100%;
+        }
+        .centerAlert{
+            margin: 0 auto;
+        }
+        .ideasplusTitle p{
+            color: white;
+            font-size: 16px;
+            font-family: 'Open Sans';
+        }
+    
+}
+
+        </style>
+        <div class="ideasplusTitle">
+            <span>IDEAS</span><span>+</span>
+            <p>By BrianiacDevelopers</p>
+        </div>
+        
+        
+    <div class="container loginInterno" ng-controller="controllerForm">
+     <br>
+        //
+      
+        //
+        
+         <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+              <div class="panel panel-default">
+                 
+                  <div class="panel-body">
+                    <form  ng-submit="entrar()">
+                        <fieldset>
+                            <div class="form-group">
+                              <input class="form-control" ng-model="txtUsuario" placeholder="Usuario" name="email" type="text" required>
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control" ng-model="txtContrasena" placeholder="Contraseña" name="password" type="password" value=""required>
+                          </div>                            
                     
-                     <input type="hidden" ng-model="id" />  
-                     <input type="submit" name="btnInsert" class="btn btn-info" ng-click="insertData()" value="{{btnName}}"/>  
-                     <br /><br />  
-                     <table class="table table-bordered">  
-                          <tr>  
-                               <th>Nombre rol</th>  
+                          <div class="row">
+                           <div class="col-md-6">
+                            <input class="btn btn-lg btn-info btn-block" type="submit" value="Entrar">
+                           </div>
+                           <div class="col-md-6">
+                              <input class="btn btn-lg btndefault btn-block" ng-click="limpiar()" type="reset" value="Borrar">
+                           </div>
+                          </div>
                           
-                               <th>Actualizar</th>  
-                               
-                                <th>Eliminar</th>
-                          </tr>  
-                          <tr ng-repeat="x in names">  
-                               <td>{{x.NOMBRE}}</td>  
-                            
-                               <td><button ng-click="updateData(x.ID_ROL, x.NOMBRE)" class="btn btn-info btn-xs">Actualizar</button></td>
-                                <td><button ng-click="deleteData(x.ID_ROL)" class="btn btn-info btn-xs">Eliminar</button></td>  
-                          </tr>  
-                     </table>  
-                </div>  
-           </div>  
-      </body>  
- </html>  
- <script>  
- 
- </script>  
+                          <div>
+                              ¿No tienes usuario? haz click <a href="./signup.php">aquí</a>
+                          </div>
+                        </fieldset>
+                     </form>
+                  </div>
+              </div> 
+            </div>
+          </div> 
+
+      
+    </div>
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <script src="../controlador/app.js"></script>
+    </body>
+</html>
