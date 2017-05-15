@@ -8,6 +8,51 @@
            
            <meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
 
+     
+      <style>
+
+          body{
+              width: 100%;
+              height: 870px;
+              background:url(../recursos/ideas.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
+
+          .row{
+              margin: 20px 0px 20px 0px;
+          }
+          .ideasplusTitle{
+              width: 100%;
+              text-align: center;
+            margin-top:20px;
+          }
+          .ideasplusTitle span:nth-child(1){
+              color: white;
+          }   .ideasplusTitle span:nth-child(2){
+              color: white;
+          }
+             .ideasplusTitle span{
+              font-size: 80px;
+              font-family: 'Open Sans';
+                 width: 100%;
+          }
+          .centerAlert{
+              margin: 0 auto;
+          }
+          .ideasplusTitle p{
+              color: white;
+              font-size: 14px;
+              font-family: 'Open Sans';
+          }
+          label{
+              color: white;
+              font-size: 14px;
+              
+          }
+
+        </style>
+     
       </head>  
       <body>  
            <br /><br />  
@@ -26,7 +71,7 @@
                      <br /><br /> 
                      -->
                        
-                     <table class="table table-bordered">  
+                     <table class="table table-bordered" style="background:white;">  
                           <tr>  
                                <th>Nombre</th>  
                                <th>Apellido</th>

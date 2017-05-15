@@ -26,6 +26,15 @@ var app = angular.module("myapp",[]);
            .success(function(data){  
                 $scope.names = data;  
            });  
+      }
+      /*
+      * Listado de roles
+      */
+      $scope.displayDataRol = function(){  
+           $http.get("../model/crud_rol.php")  
+           .success(function(data){  
+                $scope.names = data;  
+           });  
       }  
       $scope.updateData = function(id, nombreRol){  
            $scope.id = id;  
