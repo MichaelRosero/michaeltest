@@ -5,6 +5,9 @@
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
            <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
            <script src="../controller/controlador_usuario.js"></script>
+        
+           <meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
+
       </head>  
       <body>  
            <br /><br />  
