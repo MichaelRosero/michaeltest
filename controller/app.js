@@ -32,7 +32,7 @@ function controllerForm($scope, $http) {
              $scope.txtUsuario    = '';
              $scope.txtContrasena = '';   
            }else{
-               window.location.href = "./vista_areas_interes.php";
+               window.location.href = "./vista_area_interes.php";
              // si existe ya la hicimos y que nos ponga un mensaje de bienvenida
              $scope.rsJSON = data.usuario;
              $scope.alertaLoginCorrecto = false;            
