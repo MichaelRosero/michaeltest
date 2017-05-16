@@ -55,9 +55,12 @@
      
       </head>  
       <body>  
+        <div class="ideasplusTitle">
+            <span>REGISTRO DE USUARIOS</span>
+        </div>
            <br /><br />  
            <div class="container" style="width:500px;">  
-           <h2 algin="center"> Registrarse </h2>
+           
                 <div ng-app="myapp" ng-controller="usercontroller" ng-init="displayData()" required>  
                      <label>Nombre</label>  
                      <input type="text" name="nombreUsuario" ng-model="nombreUsuario" class="form-control" />  
