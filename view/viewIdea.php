@@ -6,10 +6,8 @@
            <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
            <script src="../controller/controlador_idea.js"></script>
            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      </head>
-      <body>
-
-        <style>
+           
+           <style>
 
           body{
               width: 100%;
@@ -51,6 +49,12 @@
           }
 
         </style>
+           
+           
+      </head>
+      <body>
+
+        
         <div class="ideasplusTitle">
             <span>Administrar ideas</span>
         </div>

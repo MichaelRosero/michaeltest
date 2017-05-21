@@ -51,7 +51,7 @@
 
         </style>
         <div class="ideasplusTitle">
-            <a href="./login.html">  <span>IDEAS</span><span>+</span> </a>
+            <a href="./login.html">  <span>IDEAS ++</span><span>+</span> </a>
             <p>Por BrianiacDevelopers</p>
         </div>
         
