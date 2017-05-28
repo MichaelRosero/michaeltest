@@ -4,13 +4,19 @@
       <head>  
           
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+           <link rel="stylesheet" href="../css/estilos.css"s />  
            <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
            <script src="../controller/controlador_area_interes.js"></script>
+           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       </head>  
       <body>  
+      
+        <div class="ideasplusTitle">
+            <span>Administrar &Aacute;reas de Inter&eacute;s</span>
+        </div>
            <br /><br />  
            <div class="container" style="width:500px;">  
-                <h2 algin="center"> Gesti&oacute;n de &Aacute;reas de Inter&eacute;s </h2>
+               
                 <div ng-app="myapp" ng-controller="usercontroller" ng-init="displayData()">  
                      <label>Nombre de &Aacute;rea</label>  
                      <input type="text" name="nombreArea" ng-model="nombreArea" class="form-control" />  
