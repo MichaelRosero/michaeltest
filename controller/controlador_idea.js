@@ -1,18 +1,25 @@
 var app = angular.module("myapp",[]);
+var areaId;
+  var usuarioID;
+$(document).ready(function(){
+usuarioID= $('#userCrea').val(); 
+   
+});
+
 
  app.controller("ideacontroller", function($scope, $http){
 
-     $scope.btnName = "ADD";
+     $scope.btnName = "Publicar";
 
      $scope.insertData = function(){
-
+       
            if($scope.tituloIdea == null)
            {
                alert("El titulo de la idea es requerido");
                return;
            }
 
-         if($scope.areainteresIdea == null)
+         if(areaId == null)
            {
                alert("debe elegir un area de interes");
                return;
@@ -27,10 +34,12 @@ var app = angular.module("myapp",[]);
          $http.post(
                      "../model/crud_idea.php",
                      {
+                       
                         'tituloIdea':$scope.tituloIdea,
-                        'areainteresIdea':$scope.areainteresIdea,
+                        'areainteresIdea':areaId,
                         'descripcionIdea':$scope.descripcionIdea.trim(),
                         'privadoIdea':$scope.privadoIdea,
+                         'idUsuarioCrea':usuarioID,
                         'btnName':$scope.btnName
                      }
                 ).success(function(data){
@@ -42,7 +51,7 @@ var app = angular.module("myapp",[]);
                      $scope.privadoIdea = null;
                      $scope.btnName = null;
 
-                     $scope.btnName = "ADD";
+                     $scope.btnName = "Publicar";
                 });
       }
 
@@ -52,9 +61,24 @@ var app = angular.module("myapp",[]);
                 $scope.areas = data;
            });
 
-          $scope.estadosprivados = ['Público','Privado'];
+                                                        
       }
+      
+          $scope.displayIdea = function(){
+           $http.get("../model/crud_publicaciones.php")
+           .success(function(data){
+                $scope.ideas = data;
+           });
 
+                                                        
+      }
+      
+  
+    $scope.mostrar = function(id, nombreRol){  
+       areaId=id;
+    
+      } 
+       
 
       /*$scope.updateData = function(id, nombreRol){  s
            $scope.id = id;
