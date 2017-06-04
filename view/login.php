@@ -20,11 +20,14 @@
   
 <!-- Mixins-->
 <!-- Pen Title-->
+
 <div class="pen-title">
  
-  <h1>Inicia sesión</h1><span>Desarrollo <i class='fa fa-code'></i> por <a href='http://andytran.me'>Brianiac Developers</a></span>
-</div>
-<div class="rerun"><a href="">Inicio</a></div>
+  <h1><b>IDEASPLUS DE:</b></h1>
+      <div align="center"> 
+    <img src="../recursos/uniajc.png"/></div>
+<br>
+    
 <div class="container">
   <div class="card"></div>
   <div class="card" ng-controller="controllerForm" lang="es">
