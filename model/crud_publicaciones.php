@@ -4,7 +4,11 @@ include('conexion.php');
 
 
  $output = array();  
+<<<<<<< HEAD
  $query = "SELECT * FROM tb_idea INNER JOIN tb_usuario ON tb_usuario.ID_USUARIO = tb_idea.ID_USUARIO_CREA INNER JOIN tb_area_interes ON tb_idea.ID_AREA=tb_area_interes.ID_AREAINTERES";  
+=======
+ $query = "SELECT * FROM tb_idea INNER JOIN tb_usuario ON tb_usuario.ID_USUARIO = tb_idea.ID_USUARIO_CREA";  
+>>>>>>> origin/master
  $result = mysqli_query($connect, $query);  
  if(mysqli_num_rows($result) > 0)  
  {

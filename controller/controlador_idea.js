@@ -12,7 +12,11 @@ usuarioID= $('#userCrea').val();
      $scope.btnName = "Publicar";
 
      $scope.insertData = function(){
+<<<<<<< HEAD
       
+=======
+       
+>>>>>>> origin/master
            if($scope.tituloIdea == null)
            {
                alert("El titulo de la idea es requerido");
@@ -52,7 +56,10 @@ usuarioID= $('#userCrea').val();
                      $scope.btnName = null;
 
                      $scope.btnName = "Publicar";
+<<<<<<< HEAD
                 $scope.displayIdea();  
+=======
+>>>>>>> origin/master
                 });
       }
 
@@ -74,6 +81,7 @@ usuarioID= $('#userCrea').val();
                                                         
       }
       
+<<<<<<< HEAD
               $scope.cerrarSesion = function(){  
            // alert("hola papu");
              $scope.btnName = "Cerrar";   
@@ -82,11 +90,14 @@ usuarioID= $('#userCrea').val();
                   window.location.href = "login.php";
            });
       }
+=======
+>>>>>>> origin/master
   
     $scope.mostrar = function(id, nombreRol){  
        areaId=id;
     
       } 
+<<<<<<< HEAD
       $scope.tomarIdea = function(id_idea, id_usuario){  
                  //$scope.btnName = "deleteData";
 $http.post("../model/crud_idea.php", {'id_usuario':id_usuario,'id_idea':id_idea, 'btnName':"actualizarIdea"}).success(function(data){
@@ -109,6 +120,10 @@ $http.post("../model/crud_idea.php", {'id':usuarioID     ,'id_idea':id_idea, 'bt
    
            });
       }
+=======
+       
+
+>>>>>>> origin/master
       /*$scope.updateData = function(id, nombreRol){  s
            $scope.id = id;
            $scope.nombreRol = nombreRol;

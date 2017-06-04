@@ -94,10 +94,16 @@ session_start();
                                         </footer>
                                     </div>
                                 </li>
+<<<<<<< HEAD
                                 
                                 <li class="profile dropdown">
                                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                                         <div class="img" > </div> <span class="name">
+=======
+                                <li class="profile dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <div class="img" style="background-image: url('https://avatars3.githubusercontent.com/u/3959008?v=3&s=40')"> </div> <span class="name">
+>>>>>>> origin/master
                           <?php echo $_SESSION['nombre']; ?>
                         </span> </a>
                                     <div class="dropdown-menu profile-dropdown-menu" aria-labelledby="dropdownMenu1"  >
@@ -106,7 +112,11 @@ session_start();
                                        
                                         <div class="dropdown-divider"></div>
                                      <form ng-app="myapp" ng-controller="usercontroller" ng-init="displayData()" class="myForm">
+<<<<<<< HEAD
                                       <a class="dropdown-item" href="#"> <i class="fa fa-user icon"></i>  <input type="submit" name="btnCerrar" ng-click="cerrarSesion()" value="Cerrar" >  </a>     
+=======
+                                      <a class="dropdown-item" href="#"> <i class="fa fa-user icon"></i>  <input type="submit" name="btnCerrar" ng-click="cerrarSesion()" value="Cerrar" ></input>  </a>     
+>>>>>>> origin/master
                                        </form>
                                     </div>
                                 </li>

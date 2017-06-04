@@ -30,7 +30,11 @@ var app = angular.module("myapp",[]);
                      }  
                 ).success(function(data){  
                      alert(data);  
+<<<<<<< HEAD
                      window.location.href = "./index.php";
+=======
+                     window.location.href = "./www.php";
+>>>>>>> origin/master
                      $scope.nombreUsuario = null;  
                     
                      $scope.btnName = "REGISTRAR";  

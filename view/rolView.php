@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 <?php 
@@ -6,6 +7,8 @@ session_start();
   {?>
 
 
+=======
+>>>>>>> origin/master
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -23,7 +26,10 @@ session_start();
 
          <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
           <script src="../controller/controlador_rol.js"></script>
+<<<<<<< HEAD
                <script src="../controller/controlador_usuario.js"></script>
+=======
+>>>>>>> origin/master
         <script>
     $(document).ready(function(){
          $('.errorRol').hide();
@@ -105,10 +111,17 @@ session_start();
                                 </div>
                             </li>
                             <li class="profile dropdown">
+<<<<<<< HEAD
                                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                                         <div class="img" > </div> <span class="name">
                           <?php echo $_SESSION['nombre']; ?>
                         </span> </a>
+=======
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <div class="img" style="background-image: url('https://avatars3.githubusercontent.com/u/3959008?v=3&s=40')"> </div> <span class="name">
+    			      John Doe
+    			    </span> </a>
+>>>>>>> origin/master
                                  <div class="dropdown-menu profile-dropdown-menu" aria-labelledby="dropdownMenu1">
                                         <a class="dropdown-item" href="#"> <i class="fa fa-user icon"></i> Perfil </a>
                                        
@@ -131,6 +144,7 @@ session_start();
                                     <a href="index.php"> <i class="fa fa-home"></i> Dashboard </a>
                                 </li>
                              
+<<<<<<< HEAD
                              <li>
                                         <a href=""> <i class="fa fa-table"></i>Control <i class="fa arrow"></i> </a>
                                         <ul>
@@ -153,6 +167,25 @@ session_start();
                                         </ul>
                                     </li>
 
+=======
+                                <li>
+                                    <a href=""> <i class="fa fa-table"></i>Control <i class="fa arrow"></i> </a>
+                                    <ul>
+                                       
+                                      
+                                    <li> <a href="rolView.php">
+    								Roles
+    							</a> </li>
+                                   
+<li> <a href="areaInteresView.php"    >
+    								Áreas de Interés
+    							</a> </li>
+                                   <li> <a href="usuarioView.php"    >
+    								Usuarios
+    							</a> </li>
+                                    </ul>
+                                </li>
+>>>>>>> origin/master
                                
                                
                               
@@ -266,7 +299,11 @@ session_start();
                                 <th>Eliminar</th>
                           </tr>  
                           <tr ng-repeat="x in names">  
+<<<<<<< HEAD
                                <td>{{x.NOMBRE_ROL}}</td>  
+=======
+                               <td>{{x.NOMBRE}}</td>  
+>>>>>>> origin/master
                             
                                <td><button ng-click="updateData(x.ID_ROL, x.NOMBRE)" class="btn btn-info btn-xs">Actualizar</button></td>
                                 <td><button ng-click="deleteData(x.ID_ROL)" class="btn  btn-danger btn-xs">Eliminar</button></td>  
@@ -335,6 +372,7 @@ background-image: url('exito.png');
         <script src="../recursos/js/app.js"></script>
     </body>
 
+<<<<<<< HEAD
 </html>
 <?php
 
@@ -344,3 +382,6 @@ background-image: url('exito.png');
     header("location: ./login.php");
   }
  ?>
+=======
+</html>
+>>>>>>> origin/master
