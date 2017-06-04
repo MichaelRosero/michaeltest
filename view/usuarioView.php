@@ -251,7 +251,7 @@ session_start();
     <tr ng-repeat="x in names">  
                                <td>{{x.NOMBRE}}</td>  
                                <td><button ng-click="updateData(x.ID_USUARIO, x.NOMBRE)" class="btn btn-info btn-xs">Actualizar</button></td>
-                               <td><button ng-click="inactivateData(x.ID_USUARIO)" class="btn btn-info btn-xs">Eliminar</button></td>  
+                               <td><button ng-click="deleteData(x.ID_USUARIO)" class="btn btn-info btn-xs">Eliminar</button></td>  
                           </tr>         
     </tbody>
   </table>

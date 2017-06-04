@@ -22,10 +22,10 @@
 <!-- Pen Title-->
 
 <div class="pen-title">
- 
-  <h1><b>IDEASPLUS DE:</b></h1>
-      <div align="center"> 
-    <img src="../recursos/uniajc.png"/></div>
+ <div align="left"> 
+    &nbsp &nbsp<img src="../recursos/uniajc.png"/></div>
+  <h1><b>IDEASPLUS </b></h1>
+      
 <br>
     
 <div class="container">
@@ -97,8 +97,9 @@
            
                        <select name="idRolUsuario" ng-model="idRolUsuario" class="form-control form-control-lg" >
                       <option value="" selected>¿Qué eres?</option>
-                      <option value="3">Profesor</option> 
+                      <option value="1">Profesor</option> 
                       <option value="2">Estudiante</option>
+                       <option value="5">Director</option>
                      </select>
      </div>
      <div class="input-container">
