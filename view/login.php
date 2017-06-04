@@ -16,7 +16,7 @@
 <script src="../controller/controlador_usuario.js"></script>
 </head>
 
-<body >
+<body style="background-color:yellow" >
   
 <!-- Mixins-->
 <!-- Pen Title-->
