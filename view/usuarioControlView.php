@@ -23,7 +23,6 @@ session_start();
 
          <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
              <script src="../controller/controlador_usuario.js"></script>
-                 <script src="../controller/controlador_usuario.js"></script>
         <script>
     $(document).ready(function(){
          $('.errorRol').hide();
@@ -114,9 +113,7 @@ session_start();
                                         <a class="dropdown-item" href="#"> <i class="fa fa-user icon"></i> Perfil </a>
                                        
                                         <div class="dropdown-divider"></div>
-                                         <form ng-app="myapp" ng-controller="usercontroller" ng-init="displayData()" class="myForm">
-                                      <a class="dropdown-item" href="#"> <i class="fa fa-user icon"></i>  <input type="submit" name="btnCerrar" ng-click="cerrarSesion()" value="Cerrar" ></input>  </a>     
-                                       </form>
+                                        <a class="dropdown-item" href="login.html"> <i class="fa fa-power-off icon"></i> Cerrar Sesión </a>
                                     </div>
                             </li>
                         </ul>

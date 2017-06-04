@@ -23,7 +23,7 @@ session_start();
 
          <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
           <script src="../controller/controlador_rol.js"></script>
-               <script src="../controller/controlador_usuario.js"></script>
+         <!--      <script src="../controller/controlador_usuario.js"></script>-->
         <script>
     $(document).ready(function(){
          $('.errorRol').hide();
@@ -268,7 +268,7 @@ session_start();
                           <tr ng-repeat="x in names">  
                                <td>{{x.NOMBRE_ROL}}</td>  
                             
-                               <td><button ng-click="updateData(x.ID_ROL, x.NOMBRE)" class="btn btn-info btn-xs">Actualizar</button></td>
+                               <td><button ng-click="updateData(x.ID_ROL, x.NOMBRE_ROL)" class="btn btn-info btn-xs">Actualizar</button></td>
                                 <td><button ng-click="deleteData(x.ID_ROL)" class="btn  btn-danger btn-xs">Eliminar</button></td>  
                           </tr> 
                                             </table>

@@ -31,7 +31,7 @@ include('conexion.php');
       {  
            $nombreRol = mysqli_real_escape_string($connect, $data->nombreRol);   
            $id = $data->id;  
-           $query = "UPDATE tb_rol SET NOMBRE = '$nombreRol' WHERE ID_ROL = '$id'";  
+           $query = "UPDATE tb_rol SET NOMBRE_ROL = '$nombreRol' WHERE ID_ROL = '$id'";  
            if(mysqli_query($connect, $query))  
            {  
                 echo "2";  

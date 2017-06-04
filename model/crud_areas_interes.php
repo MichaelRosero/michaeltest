@@ -18,7 +18,7 @@ include('conexion.php');
        
            $nombreArea = mysqli_real_escape_string($connect, $data->nombreArea);  
            $descripcionArea = mysqli_real_escape_string($connect, $data->descripcionArea);  
-           $query = "INSERT INTO tb_area_interes(NOMBRE,DESCRIPCION) VALUES ('$nombreArea','$descripcionArea')";  
+           $query = "INSERT INTO tb_area_interes(NOMBRE_AREA,DESCRIPCION) VALUES ('$nombreArea','$descripcionArea')";  
            if(mysqli_query($connect, $query))  
            {  
                 echo "Área de interés, registrada.";  
@@ -34,7 +34,7 @@ include('conexion.php');
            $nombreArea = mysqli_real_escape_string($connect, $data->nombreArea);
             $descripcionArea = mysqli_real_escape_string($connect, $data->descripcionArea);     
            $id = $data->id;  
-           $query = "UPDATE tb_area_interes SET NOMBRE = '$nombreArea', DESCRIPCION='$descripcionArea' WHERE ID_AREAINTERES = '$id'";  
+           $query = "UPDATE tb_area_interes SET NOMBRE_AREA = '$nombreArea', DESCRIPCION='$descripcionArea' WHERE ID_AREAINTERES = '$id'";  
            if(mysqli_query($connect, $query))  
            {  
                 echo 'Actualizado con éxito.';  

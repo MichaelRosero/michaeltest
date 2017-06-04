@@ -55,7 +55,7 @@ var app = angular.module("myapp",[]);
       $scope.displayData = function(){  
            $http.get("../model/crud_usuario.php")  
            .success(function(data){  
-            
+      
                 $scope.names = data;  
            });  
       }       

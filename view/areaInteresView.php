@@ -254,10 +254,10 @@ session_start();
                                 <th>Eliminar</th>
                           </tr>  
                           <tr ng-repeat="x in names">  
-                               <td>{{x.NOMBRE}}</td>  
+                               <td>{{x.NOMBRE_AREA}}</td>  
                             
-                               <td><button ng-click="updateData(x.ID_ROL, x.NOMBRE)" class="btn btn-info btn-xs">Actualizar</button></td>
-                                <td><button ng-click="deleteData(x.ID_ROL)" class="btn btn-danger btn-xs">Eliminar</button></td>  
+                               <td><button ng-click="updateData(x.ID_AREAINTERES, x.NOMBRE_AREA)" class="btn btn-info btn-xs">Actualizar</button></td>
+                                <td><button ng-click="deleteData(x.ID_AREAINTERES)" class="btn btn-danger btn-xs">Eliminar</button></td>  
                           </tr> 
                                             </table>
                                         </section>
