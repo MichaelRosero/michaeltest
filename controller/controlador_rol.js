@@ -4,12 +4,8 @@ var app = angular.module("myapp",[]);
       $scope.btnName = "Agregar";  
  
      
-<<<<<<< HEAD
       $scope.insertData = function(){
         
-=======
-      $scope.insertData = function(){  
->>>>>>> origin/master
            if($scope.nombreRol == null)  
            {  
                 alert("Nombre rol es requerido");  
@@ -20,12 +16,8 @@ var app = angular.module("myapp",[]);
                 $http.post(  
                      "../model/crud_rol.php",  
                      {'nombreRol':$scope.nombreRol, 'btnName':$scope.btnName, 'id':$scope.id}  
-<<<<<<< HEAD
                 ).success(function(data){ 
                     alert(data);
-=======
-                ).success(function(data){  
->>>>>>> origin/master
                  
                   var result = $.trim(data);
                     

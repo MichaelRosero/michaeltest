@@ -18,11 +18,7 @@ include('conexion.php');
           $hoy = date("Y").date("m").date("d") ;
           
 
-<<<<<<< HEAD
            $query = "INSERT INTO tb_idea(TITULO, ID_AREA, DESCRIPCION, PRIVADO, ID_USUARIO_CREA, FECHA_PUBLICACION,ID_ESTADO) VALUES ('$tituloIdea', $areainteresIdea, '$descripcionIdea', $privadoIdea,$idUsuarioCrea,$hoy,2)";  
-=======
-           $query = "INSERT INTO tb_idea(TITULO, ID_AREA, DESCRIPCION, PRIVADO, ID_USUARIO_CREA, FECHA_PUBLICACION) VALUES ('$tituloIdea', $areainteresIdea, '$descripcionIdea', $privadoIdea,$idUsuarioCrea,$hoy)";  
->>>>>>> origin/master
           
            if(mysqli_query($connect, $query))  
            {  
@@ -83,11 +79,7 @@ include('conexion.php');
            } 
           return;
       }
-<<<<<<< HEAD
         if($btn_name == 'Mostrar')  
-=======
-           if($btn_name == 'Mostrar')  
->>>>>>> origin/master
       {  
            $id = $data->id;  
            $query = "DELETE FROM tb_rol WHERE ID_ROL = '$id'";  
@@ -101,7 +93,6 @@ include('conexion.php');
            } 
           return;
       }
-<<<<<<< HEAD
          if($btn_name == 'actualizarIdea') 
       {  
            $id_usuario = $data->id_usuario;  
@@ -155,12 +146,6 @@ include('conexion.php');
 
  $output = array();  
  $query = "SELECT * FROM tb_area_interes";  
-=======
- } 
-
- $output = array();  
- $query = "SELECT * FROM tb_area_interes order by ID_AREAINTERES";  
->>>>>>> origin/master
  $result = mysqli_query($connect, $query);  
  if(mysqli_num_rows($result) > 0)  
  {

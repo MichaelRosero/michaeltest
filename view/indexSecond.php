@@ -21,49 +21,30 @@ session_start();
              <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
              
            <script src="../controller/controlador_idea.js"></script>
-<<<<<<< HEAD
           
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 </style>
 
-=======
-<style>
-html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
-</style>
->>>>>>> origin/master
 <body class="w3-theme-l5"   ng-app="myapp" ng-controller="ideacontroller">
 
 <!-- Navbar -->
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-<<<<<<< HEAD
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Ideas++</a>
-=======
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Logo</a>
->>>>>>> origin/master
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
   <div class="w3-dropdown-hover w3-hide-small">
     <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
     <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-<<<<<<< HEAD
       <a href="#" class="w3-bar-item w3-button">Mi notificacion</a>
       <a href="#" class="w3-bar-item w3-button">Otra notificación</a>
       <a href="#" class="w3-bar-item w3-button">Otra...</a>
     </div>
   </div>
   <button class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account"  ng-click="cerrarSesion()"><img src="../recursos/avatar2.png" class="w3-circle" style="height:25px;width:25px" alt="Avatar"><span>Cerrar Sesión</span></button>
-=======
-      <a href="#" class="w3-bar-item w3-button">One npew friend request</a>
-      <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
-      <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
-    </div>
-  </div>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account"><img src="../recursos/avatar2.png" class="w3-circle" style="height:25px;width:25px" alt="Avatar"></a>
->>>>>>> origin/master
  </div>
 </div>
 
@@ -87,16 +68,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
          <h4 class="w3-center"> <?php echo $_SESSION['nombre'].' '.$_SESSION['apellido']; ?></h4>
          <p class="w3-center"><img src="../recursos/avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
          <hr>
-<<<<<<< HEAD
 
          <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <?php echo $_SESSION['correo']; ?></p>
          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <?php echo $_SESSION['telefono']; ?></p>
          <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> <?php echo $_SESSION['fecha']; ?></p>
-=======
-         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
-         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
-         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
->>>>>>> origin/master
         </div>
       </div>
       <br>
@@ -104,7 +79,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       <!-- Accordion -->
       <div class="w3-card-2 w3-round">
         <div class="w3-white">
-<<<<<<< HEAD
           <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> Mis grupos</button>
           <div id="Demo1" class="w3-hide w3-container">
             <p>Some text..</p>
@@ -114,17 +88,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
             <p>Mas texto..</p>
           </div>
           <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Mis fotos</button>
-=======
-          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
-          <div id="Demo1" class="w3-hide w3-container">
-            <p>Some text..</p>
-          </div>
-          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
-          <div id="Demo2" class="w3-hide w3-container">
-            <p>Some other text..</p>
-          </div>
-          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
->>>>>>> origin/master
           <div id="Demo3" class="w3-hide w3-container">
          <div class="w3-row-padding">
          <br>
@@ -155,11 +118,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       <!-- Interests --> 
       <div class="w3-card-2 w3-round w3-white w3-hide-small">
         <div class="w3-container">
-<<<<<<< HEAD
           <p>Areas de interés</p>
-=======
-          <p>Interests</p>
->>>>>>> origin/master
           <p>
             <span class="w3-tag w3-small w3-theme-d5">News</span>
             <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
@@ -182,13 +141,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
         <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
           <i class="fa fa-remove"></i>
         </span>
-<<<<<<< HEAD
         <p><strong>Hey! <?php echo $_SESSION['nombre'];?></strong></p>
         <p>Cómo estás?</p>
-=======
-        <p><strong>Hey!</strong></p>
-        <p>People are looking at your profile. Find out who.</p>
->>>>>>> origin/master
       </div>
     
     <!-- End Left Column -->
@@ -206,7 +160,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
              <input type="text"  class="form-control" placeholder="Ingresa el título de tu idea." name="tituloIdea" ng-model="tituloIdea"><br>
              <textarea rows="3" class="form-control underlined" placeholder="Describe tu idea. Máximo 100 caracteres."  ng-model="descripcionIdea" name="descripcionIdea" ></textarea >
                   
-<<<<<<< HEAD
                  
                 <h5 class="w3-opacity"  >Elige el área de interés de tu idea, presionando click sobre el tag.</h5>
                          <p>
@@ -222,32 +175,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
              <input type="radio" name="gender" value="1" ng-model="privadoIdea">Privada<br>
                      </div>
                       <div class="col-xs-12 col-md-2">
-=======
-                 <p>
-                <h5 class="w3-opacity"  >Elige el área de interés de tu idea, presionando click sobre el tag.</h5>
-                         
-                          <span ng-repeat="x in areas" class="w3-tag w3-small w3-theme-d5"  >  
-                              
-                               <option  ng-click="mostrar(x.ID_AREAINTERES, x.NOMBRE)"  ng-model="areainteresIdea" >{{x.NOMBRE}}</option>  
-
-                          </span> 
-                               
-          </p>    
-             
-                     <div class="col-xs-2">
-             <input type="radio" name="gender" value="1" ng-model="privadoIdea">Privada<br>
-                     </div>
-                      <div class="col-xs-2">
->>>>>>> origin/master
             <input type="radio" name="gender" value="2" ng-model="privadoIdea">Pública<br>
                       </div>
               
              <div class="col-xs-12 mike-ButtonIdea">
-<<<<<<< HEAD
                  <br>
-=======
-                 </br>
->>>>>>> origin/master
               <button type="submit" class="w3-button w3-theme" name="btnInsert" ng-click="insertData()" value="{{btnName}}"> <i class="fa fa-pencil"></i>  Publicar idea</button>   
               </div>
             </div>
@@ -258,17 +190,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       <div class="w3-container w3-card-2 w3-white w3-round w3-margin"  ng-repeat="x in ideas"><br>
         <img src="../recursos/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
         <span class="w3-right w3-opacity">1 min</span>
-<<<<<<< HEAD
         <h4>{{x.NOMBRE}} {{x.APELLIDO}}</h4><br>
         <hr class="w3-clear">
         <h3>{{x.TITULO}} </h3>
         <p>{{x.DESCRIPCION}}</p>
          
-=======
-        <h4>{{x.NOMBRE}}</h4><br>
-        <hr class="w3-clear">
-        <p>{{x.DESCRIPCION}}</p>
->>>>>>> origin/master
           <div class="w3-row-padding" style="margin:0 -16px">
             <div class="w3-half">
          
@@ -277,7 +203,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
             
           </div>
         </div>
-<<<<<<< HEAD
     
               <p><span class="w3-tag w3-small w3-theme-d5"  >  
                               
@@ -292,10 +217,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
         <div class="mike-BotonElimnar">
         <button type="button" id="butonEliminar" class="w3-button w3-margin-bottom" ng-click="deleteData(x.ID_USUARIO_CREA, x.ID_IDEA)"><span class="glyphicon glyphicon-trash"></span>  Eliminar idea</button> 
           </div>
-=======
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
->>>>>>> origin/master
       </div>
       </div>
     
@@ -306,17 +227,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
     <div class="w3-col m2">
       <div class="w3-card-2 w3-round w3-white w3-center">
         <div class="w3-container">
-<<<<<<< HEAD
           <p>Próximos eventos:</p>
         
           <p><strong>Holiday</strong></p>
           <p>Miércoles 7:20</p>
-=======
-          <p>Upcoming Events:</p>
-          <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
-          <p><strong>Holiday</strong></p>
-          <p>Friday 15:00</p>
->>>>>>> origin/master
           <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
         </div>
       </div>
@@ -324,15 +238,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       
       <div class="w3-card-2 w3-round w3-white w3-center">
         <div class="w3-container">
-<<<<<<< HEAD
           <p>Companeros</p>
           <img src="../recursos/avatar6.png" alt="Avatar" style="width:50%"><br>
           <span>Anita del barrio</span>
-=======
-          <p>Friend Request</p>
-          <img src="../recursos/avatar6.png" alt="Avatar" style="width:50%"><br>
-          <span>Jane Doe</span>
->>>>>>> origin/master
           <div class="w3-row w3-opacity">
             <div class="w3-half">
               <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
@@ -370,22 +278,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 </footer>
 
 <script>
-<<<<<<< HEAD
 
     
    
-=======
-$(document).ready(function(){
-   
-    $('#mostrar').click(function(){
-        alert("hola");
-  //     $(this).addClass("img-selected");
-    });
-    
-    
-});
-
->>>>>>> origin/master
 
 </script>
  
@@ -422,10 +317,6 @@ function openNav() {
   }
   else
   {
-<<<<<<< HEAD
     header("location: ./login.php");
-=======
-    header("location: ./log in.php");
->>>>>>> origin/master
   }
  ?> 

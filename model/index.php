@@ -24,12 +24,9 @@ function consultarLogin($usuario,$contrasena){
         $obtenerNombre= $row ['NOMBRE'];
           $obtenerApellido= $row ['APELLIDO'];
         $obtenerID= $row ['ID_USUARIO'];
-<<<<<<< HEAD
         $fecha = $row['FECHA_NACIMIENTO'];
            $telefono = $row['TELEFONO'];
          $correo = $row['CORREO'];
-=======
->>>>>>> origin/master
      }
      if($obtenerTipo=='Administrador'){
         session_start();
@@ -37,16 +34,11 @@ function consultarLogin($usuario,$contrasena){
       
          $bool =1;
         
-<<<<<<< HEAD
      }else if($obtenerTipo=='Estudiante' or $obtenerTipo=='Profesor' ) {
-=======
-     }else if($obtenerTipo=='Estudiante') {
->>>>>>> origin/master
           session_start();
           $_SESSION['usuario']='YES';
          $_SESSION['nombre']=$obtenerNombre;
           $_SESSION['apellido']=$obtenerApellido;
-<<<<<<< HEAD
           $_SESSION['id']=$obtenerID;
            $_SESSION['fecha'] =$fecha;
           $_SESSION['correo'] =$correo;
@@ -55,13 +47,6 @@ function consultarLogin($usuario,$contrasena){
      }else{
          $bool=0;
      }  
-=======
-          $_SESSION['id']=$obtenerID;   
-         $bool=2;
-     }else{
-         $bool=0;
-     }
->>>>>>> origin/master
   
         $_SESSION['nombre']=$obtenerNombre;
  }else{
