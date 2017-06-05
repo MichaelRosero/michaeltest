@@ -89,6 +89,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
          <div align="center"> 
     <img src="../recursos/uniajc.png"/></div>
           </div>
+
+<button onclick="myFunction('DivCronograma')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> Cronograma</button>
+          <div id="DivCronograma" class="w3-hide w3-container">
+            <a style="cursor: pointer;" onclick="window.open('../view/Cronograma.php','', 'width=1200,height=600');"><cursive> Mi Cronograma de Actividades</cursive></a>
+            <!--<p><cursive> Administrar Mi Cronograma de Actividades</cursive></p>-->
+          </div>
+
         </div>      
       </div>
       <br>
