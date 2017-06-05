@@ -1,7 +1,3 @@
-
-
-
-
 <?php 
 session_start();
   if (isset($_SESSION['administrador']) && $_SESSION['administrador']=='YES') 
@@ -230,9 +226,12 @@ session_start();
                                     
                                         <div class="form-group"> <label class="control-label" >Ingresa una área de interés</label> <input type="text" class="form-control underlined" placeholder="Ejemplo: Diseño gráfico, Tecnología, Investigación" name="nombreArea" ng-model="nombreArea"> </div>
                                     
-                                        <div class="form-group"> <label class="control-label">Descripción</label> <textarea rows="3" class="form-control underlined" placeholder="Descripción breve del área de interés digitada. Máximo de 30 caracteres." name="descripcionArea" ng-model="descripcionArea"></textarea > </div>
+                                        <div class="form-group"> <label class="control-label">Descripción</label> <textarea rows="3" class="form-control underlined" placeholder="Descripción breve del área de interés. Máximo de 300 caracteres." name="descripcionArea" ng-model="descripcionArea"></textarea > </div>
                                          <input type="hidden" ng-model="id" />  
-                                                     <input type="submit" class="btn btn-success" name="btnInsert" ng-click="insertData()" value="{{btnName}}"></input>
+                                                     <input type="submit" class="btn btn-success" name="btnInsert" ng-click="insertData()" value="{{btnName}}">
+                                                     </input>
+                                                     <button  class="btn btn-danger btn-xs" name="btnCancel" ng-click="cancelOperation()" ng-show="true" value="{{btnCancel}}">Cancelar
+                                                     </button>
                                       
                                     </form>
                                 </div>
@@ -255,8 +254,9 @@ session_start();
                           </tr>  
                           <tr ng-repeat="x in names">  
                                <td>{{x.NOMBRE_AREA}}</td>  
+                               <td hidden="true">{{x.DESCRIPCION}}</td>
                             
-                               <td><button ng-click="updateData(x.ID_AREAINTERES, x.NOMBRE_AREA)" class="btn btn-info btn-xs">Actualizar</button></td>
+                               <td><button ng-click="updateData(x.ID_AREAINTERES, x.NOMBRE_AREA, x.DESCRIPCION)" class="btn btn-info btn-xs">Actualizar</button></td>
                                 <td><button ng-click="deleteData(x.ID_AREAINTERES)" class="btn btn-danger btn-xs">Eliminar</button></td>  
                           </tr> 
                                             </table>

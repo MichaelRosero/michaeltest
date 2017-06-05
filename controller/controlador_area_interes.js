@@ -1,6 +1,8 @@
 var app = angular.module("myapp",[]);  
  app.controller("usercontroller", function($scope, $http){  
       $scope.btnName = "Registrar";  
+     $scope.btnCancel = "Cancelar";  
+     
       $scope.insertData = function(){  
            if($scope.nombreArea == null)  
            {  
@@ -33,21 +35,30 @@ var app = angular.module("myapp",[]);
            });  
       }  
       $scope.updateData = function(id, nombreArea, descripcionArea){  
-           $scope.id = id;  
-           $scope.nombreArea = nombreArea;
-           $scope.descripcionArea = descripcionArea;
-           
-           $scope.btnName = "Actualizar";  
+          
+          $scope.btnCancel.show = true;
+          $scope.id = id;  
+          $scope.nombreArea = nombreArea;
+          $scope.descripcionArea = descripcionArea;
+
+          $scope.btnName = "Actualizar";  
       }  
-       $scope.deleteData = function(id){  
+      $scope.deleteData = function(id){  
            $scope.btnName = "deleteData"; 
            $http.post("../model/crud_areas_interes.php", {'id':id , 'btnName':$scope.btnName}).success(function(data){
              alert(data);  
                $scope.displayData();
            });
-//           $scope.id = id;  
-//           $scope.nombreRol = nombreRol;  
-//           
-//           $scope.btnName = "deleteData";  
+  
       } 
+      
+      
+      $scope.cancelOperation = function(){  
+          
+          $scope.btnName = "Registrar"; 
+          $scope.id = null;  
+          $scope.nombreArea = "";
+          $scope.descripcionArea = "";
+  
+      }
  });  
