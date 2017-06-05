@@ -23,7 +23,7 @@
 
 <div class="pen-title">
  <div align="left"> 
-    &nbsp &nbsp<img src="../recursos/camacho.png"/></div>
+    &nbsp &nbsp<img src="../recursos/uniajc.png"/></div>
   <h1><b>IDEASPLUS </b></h1>
       
 <br>

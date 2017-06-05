@@ -86,8 +86,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
           
           <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Logo</button>
           <div id="Demo3" class="w3-hide w3-container">
-         <div align="center"> 
-    <img src="../recursos/uniajc.png"/></div>
+                <div align="center"> 
+                    <img src="../recursos/uniajc.png"/>
+                </div>
           </div>
 
 <button onclick="myFunction('DivCronograma')" class="w3-button w3-block w3-theme-l1 w3-left-align"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Cronograma</button>
