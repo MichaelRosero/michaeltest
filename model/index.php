@@ -43,6 +43,7 @@ function consultarLogin($usuario,$contrasena){
            $_SESSION['fecha'] =$fecha;
           $_SESSION['correo'] =$correo;
            $_SESSION['telefono'] =$telefono;
+           $_SESSION['rol'] =$obtenerTipo;
          $bool=2;
      }else{
          $bool=0;

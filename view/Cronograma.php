@@ -32,6 +32,13 @@ $query = " select * from cronograma where id_estudiante = ".$id_usuario." or id_
 
 
 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../recursos/css/estilo.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
 <script type="text/javascript">
 		$(document).ready(function() {
 			/*
@@ -64,7 +71,7 @@ $query = " select * from cronograma where id_estudiante = ".$id_usuario." or id_
 				<?php 	foreach($output as $posicion=>$cronograma)	{ ?>		
 					{
 						title: '<?php echo $cronograma['TITULO'] . ' Descripción: ' . $cronograma['DESCRIPCION']; ?>',
-						url: 'http://google.com/',
+						url: '../view/CronogramaView.php',
 						start: '<?php echo $cronograma['FECHA_INICIO']; ?>',
 						end: '<?php echo $cronograma['FECHA_FIN']; ?>'
 					},
@@ -93,6 +100,8 @@ $query = " select * from cronograma where id_estudiante = ".$id_usuario." or id_
 </style>
 </head>
 <body>
+<button type="button" class="btn btn-primary" onclick="window.open('../view/cronogramaView.php','', 'width=500,height=600');">Crear Actividad +</button>
+
 
 	<div id='calendar'></div>
 
