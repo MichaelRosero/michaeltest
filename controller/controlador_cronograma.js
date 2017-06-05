@@ -14,7 +14,8 @@ var app = angular.module("myapp",[]);
            } 
          
            else  
-           {  
+           {                    
+
                 $http.post(  
                      "../model/crud_cronograma.php",  
                      {'tituloCronograma':$scope.tituloCronograma, 
@@ -34,6 +35,7 @@ var app = angular.module("myapp",[]);
                      $scope.btnName = "Registrar";  
                      $scope.displayData();
 
+                     //window.parent.document.location.href = "http://example.com";
                        
                 });  
            }  
