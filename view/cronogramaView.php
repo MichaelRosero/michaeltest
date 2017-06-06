@@ -38,11 +38,11 @@ session_start();
                                         <div class="form-group"> <label class="control-label" >Ingresa una actividad</label> <input type="text" class="form-control underlined" placeholder="Ejemplo: Diseño gráfico, Tecnología, Investigación" name="tituloCronograma" ng-model="tituloCronograma"> </div>
 
 
-                                         <div class="form-group"> <label class="control-label" >Ingresa la fecha inicial</label> <input type="text" class="form-control underlined" placeholder="Ejemplo: 31/12/2017" name="fechaInicialCronograma" ng-model="fechaInicialCronograma"> </div>
+                                         <div class="form-group"> <label class="control-label" >Ingresa la fecha inicial</label> <input type="date" class="form-control underlined" placeholder="Ejemplo: 31/12/2017" name="fechaInicialCronograma" ng-model="fechaInicialCronograma"> </div>
                                        
 
 
-                                        <div class="form-group"> <label class="control-label" >Ingresa la fecha final</label> <input type="text" class="form-control underlined" placeholder="Ejemplo: 31/12/2017" name="fechaFinalCronograma" ng-model="fechaFinalCronograma"> </div>
+                                        <div class="form-group"> <label class="control-label" >Ingresa la fecha final</label> <input type="date" class="form-control underlined" placeholder="Ejemplo: 31/12/2017" name="fechaFinalCronograma" ng-model="fechaFinalCronograma"> </div>
 
                                     
                                         <div class="form-group"> <label class="control-label">Descripción</label> <textarea rows="3" class="form-control underlined" placeholder="Descripción breve de la actividad. Máximo de 300 caracteres." name="descripcionCronograma" ng-model="descripcionCronograma"></textarea > </div>

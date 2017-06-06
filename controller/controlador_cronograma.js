@@ -35,7 +35,8 @@ var app = angular.module("myapp",[]);
                      $scope.btnName = "Registrar";  
                      $scope.displayData();
 
-                     //window.parent.document.location.href = "http://example.com";
+                     //parent.window.document.location.href = "http://example.com";
+                     header.location='../view/Cronograma.php';
                        
                 });  
            }  
